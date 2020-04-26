@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Qurantine Quiz!</title>
+    <script src="script.js"></script>
+    <link href="style.css" rel = "stylesheet">
+
+</head>
+
+<body>
+    <h1>My Qurantine Quiz!</h1>
+
+    <form id="quiz" name="quiz">
+
+        <p>Which one of these can you not do?</p>
+        <input type="radio" id="mc" name="question1" value="go-shopping-for-essentials-with-a-mask-on"> Go shopping for
+        essentials with a mask on<br>
+        <input type="radio" id="mc" name="question1" value="learn-a-new-skill"> Learn a new skill<br>
+        <input type="radio" id="mc" name="question1" value="stay-2-ft-away-from-people"> Stay 2 ft away from people<br>
+        <input type="radio" id="mc" name="question1" value="stay-in-doors"> Stay in-doors<br>
+
+        <p>What's the best thing to hoard?</p>
+        <input type="radio" id="mc" name="question2" value="knowledge"> Knowledge<br>
+        <input type="radio" id="mc" name="question2" value="everything-essential"> Everything Essential<br>
+        <input type="radio" id="mc" name="question2" value="nothing"> Nothing<br>
+        <input type="radio" id="mc" name="question2" value="toilet-paper"> Toilet Paper<br>
+
+        <p>Should you always practice?...</p>
+        <input type="radio" id="mc" name="question3" value="social-distancing"> Social Distancing<br>
+        <input type="radio" id="mc" name="question3" value="sanitization"> Sanitization<br>
+        <input type="radio" id="mc" name="question3" value="compassion"> Compassion<br>
+        <input type="radio" id="mc" name="question3" value="all-of-the-above"> All of the Above<br>
+
+        <input id="button" type="button" value= "Done!" onclick="check();">
+
+    </form>
+
+    <div id="after_submit">
+        <p id="message"></p>
+        <p id="number_correct"></p>
+        <img id = "pictures">
+    </div>
+    <div class="clearfix">
+        <div class="card">
+          <h2>Scores</h2>
+          <form method="POST">
+            <div class="initials">
+              <label for="initial">Initial</label>
+              <input type="text" name="first-last" id="first-last" placeholder="" />
+            </div>
+
+
+
+</body>
+
+</html>
